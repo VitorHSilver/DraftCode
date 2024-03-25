@@ -1,58 +1,99 @@
-body{
- font-family:Arial, Helvetica, sans-serif;
- font-size: 1.3rem;
- background-color: #B7E7EF;
- margin: 0%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    background-color: #B7E7EF;
+    margin: 0%;
 
 }
-a{
- text-decoration: none;
- color: #4B6F75;
+
+a {
+    text-decoration: none;
+    color: #4B6F75;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
     margin-top: 1%;
-    
+
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
     gap: 25px;
-    justify-content: center; 
-    
+    justify-content: center;
+
 }
+
 /* Menu */
-img{
+img {
     max-width: 100%;
-    display: block; 
+    display: block;
 }
+
 /* Aqui estico no caso a imagem, para caber no container */
-.actionImage{  
+.actionImage {
     width: 100%;
 }
-.container{
-    background-image:url("/assets/image1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.image {
+    background-image: url("/assets/image1.png");
     width: 100%;
-    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 70vh;
+    position: relative;
+    display: flex;
+
+}
+
+.card {
+
+    width: 20%;
+    background-color: #ffffff36;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    text-align: right;
+    font-size: 1rem;
+    margin: auto auto;
+
+}
+
+@media (max-width:430px) {
+    .container {
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+    }
+
+    nav {
+        width: 0;
+        visibility: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+.card {
+    border: 0.74px solid;
+    border-image-source: linear-gradient(106.41deg, rgba(255, 255, 255, 0.74) 14.66%, rgba(122, 184, 193, 0.51) 40.34%, rgba(139, 206, 217, 0.47) 65.63%, rgba(144, 214, 225, 0.69) 90.52%);
+    background: linear-gradient(109.58deg, rgba(255, 255, 255, 0.4) 12.81%, rgba(255, 255, 255, 0.1) 75.74%);
+    box-shadow: 0px -0.7425373196601868px 12.25186538696289px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.card{
-    padding: 1%;
-    background-color: #ffffff36;
-    border-radius: 8px;
-    width: 373px;
-}
-.card p{
-    word-break: break-all;
-    margin-top: 0%;
+    text-align: center;
+    flex-direction: column;
 }
