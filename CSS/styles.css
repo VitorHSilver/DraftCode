@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto,Arial';
     font-size: 1.3rem;
     background-color: #B7E7EF;
     margin: 0%;
@@ -18,7 +18,9 @@ header {
     align-items: center;
     margin: 0;
     margin-top: 1%;
-
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 21.09px;
 }
 
 ul {
@@ -33,6 +35,7 @@ ul {
 img {
     max-width: 100%;
     display: block;
+    
 }
 
 
@@ -45,65 +48,127 @@ img {
     height: 85vh;
     position: relative;
     display: flex;
+    border-top: solid 1px #4B6F75;
 
 }
 
 /* Controle da frase */
-.card {
+.card{
+    h1{
+    font-family: 'Roboto';
+    font-size: 26.73px;
+    font-weight: 600;
+    line-height: 31.33px;
+    text-align: right;
+    }p{
+    font-family: Roboto;
+    font-size: 17.82px;
+    font-weight: 400;
+    line-height: 20.88px;
+    text-align: right;
 
+    }
+}
+
+.card {
     width: 20%;
     background-color: #ffffff36;
-    border-radius: 10px;
+    border-radius: 19.31px;
     padding: 1rem 2rem;
     text-align: right;
     font-size: 1rem;
     margin: auto auto;
+    border: 0.74px solid;
+    border-image-source: linear-gradient(106.41deg, rgba(255, 255, 255, 0.74) 14.66%, rgba(122, 184, 193, 0.51) 40.34%, rgba(139, 206, 217, 0.47) 65.63%, rgba(144, 214, 225, 0.69) 90.52%);
+    box-shadow: 0px -0.7425373196601868px 12.25186538696289px 0px #0000001A;
 
 }
+/* Conteudo após a foto principal */
+.sectionThumb{
+    display: flex;
+    justify-content: center;
+}
 
+/* Elemento só é mostrado no Mobile */
 #menuMobile{
     display: none;
 }
 
 /* Responsividade Mobile */
-@media (max-width:430px) {
+@media (max-width:431px) {
     .container {
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
     } 
     header {
-        margin: 0 10%;
-        flex-direction: row-reverse;
+    margin: 0 10%;
+    flex-direction: row-reverse;
+    }
+    .cardH1{
+    width: 276.97px;
+    height: 62px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Roboto';
+    font-size: 26.73px;
+    font-weight: 600;
+    line-height: 31.33px;
+    text-align: right;
+    margin: 0;
+    }
+    .cardP{
+    width: 269.54px;
+    height: 42px;
+    gap: 0px;
+    opacity: 0px;
     }
     nav {
-        width: 0;
-        visibility: hidden;
+    width: 0;
+    visibility: hidden;
     }
-    .logo{
-        display: flex;
-        justify-content: center; 
-    }.image{
-        height: 65vh;
-    }#menuMobile{
-        size: 10px;
-        display: block;
-        };
-    
-}
-.card {
-    border: 0.74px solid;
-    border-image-source: linear-gradient(106.41deg, rgba(255, 255, 255, 0.74) 14.66%, rgba(122, 184, 193, 0.51) 
-    40.34%, rgba(139, 206, 217, 0.47) 65.63%, rgba(144, 214, 225, 0.69) 90.52%);
-    background: linear-gradient(109.58deg, rgba(255, 255, 255, 0.4) 12.81%, rgba(255, 255, 255, 0.1) 75.74%);
-    box-shadow: 0px -0.7425373196601868px 12.25186538696289px 0px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 150px;
+    .card{
+    width: 369px;
+    height: 199px;
     position: relative;
     bottom: -200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    }
+    .logo{
+    display: flex;
+    justify-content: center; 
+    }
+    .image{
+    height: 72vh;
+    }
+    #menuMobile{
+    size: 10px;
+    display: block;
+    }
+    .sectionThumb{
+    margin-top: 20%;
+    display: flex;  
+    }
+    .titleH1{
+    font-family: 'Roboto';
+    font-size: 49.71px;
+    font-weight: 600;
+    line-height: 58.26px;
     text-align: center;
-    flex-direction: column;
-    /* Manter fixo */
-    transform: translate(-0%,-15%);
-
-}
+    color: #4B6F75;
+    display: flex;
+    }
+    .sectionThumb{
+    width: 410.14px;
+    height: 174px;
+    top: 34px;
+    left: 10px;
+    gap: 0px;
+    opacity: 0px;    
+    }
+ 
+  };
